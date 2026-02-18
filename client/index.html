@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bundo — Join the Waitlist</title>
+  <meta name="description" content="Bundo helps you find and hire trusted artisans nearby. Join the waitlist." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="brand">
+      <div class="logo" aria-hidden="true">B</div>
+      <div>
+        <h1>Bundo</h1>
+        <p class="tag">Hire trusted artisans near you.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>We’re launching soon 🎉</h2>
+      <p class="lead">
+        Join the Bundo waitlist and be the first to know when we go live.
+      </p>
+
+      <form id="waitlistForm" class="form">
+        <label>
+          Full name (optional)
+          <input name="name" type="text" placeholder="Ella Omoni" />
+        </label>
+
+        <label>
+          Email
+          <input name="email" type="email" required placeholder="you@email.com" />
+        </label>
+
+        <label>
+          WhatsApp (optional)
+          <input name="whatsapp" type="tel" placeholder="+234..." />
+        </label>
+
+        <button type="submit">Join the waitlist</button>
+        <p class="fine">No spam. Only launch updates.</p>
+      </form>
+
+      <div id="success" class="success" hidden>
+        <h3>You’re on the list ✅</h3>
+        <p>Thanks! We’ll email you when Bundo launches.</p>
+      </div>
+
+      <div class="footer">
+        <p><strong>Launching first:</strong> campuses → then major cities.</p>
+      </div>
+    </section>
+
+    <p class="small">© <span id="year"></span> Bundo</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
