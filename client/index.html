@@ -23,30 +23,22 @@
         Join the Bundo waitlist and be the first to know when we go live.
       </p>
 
-      <form id="waitlistForm" class="form">
-        <label>
-          Full name (optional)
-          <input name="name" type="text" placeholder="Ella Omoni" />
-        </label>
-
-        <label>
-          Email
-          <input name="email" type="email" required placeholder="you@email.com" />
-        </label>
-
-        <label>
-          WhatsApp (optional)
-          <input name="whatsapp" type="tel" placeholder="+234..." />
-        </label>
-
-        <button type="submit">Join the waitlist</button>
-        <p class="fine">No spam. Only launch updates.</p>
-      </form>
-
-      <div id="success" class="success" hidden>
-        <h3>You’re on the list ✅</h3>
-        <p>Thanks! We’ll email you when Bundo launches.</p>
+      <!-- Tally Waitlist Embed -->
+      <div class="waitlist-embed">
+        <iframe
+          class="tally-frame"
+          src="https://tally.so/r/448G1O"
+          loading="lazy"
+          width="100%"
+          height="420"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="Bundo Waitlist">
+        </iframe>
       </div>
+
+      <p class="fine">No spam. Only launch updates.</p>
 
       <div class="footer">
         <p><strong>Launching first:</strong> campuses → then major cities.</p>
@@ -56,6 +48,8 @@
     <p class="small">© <span id="year"></span> Bundo</p>
   </main>
 
-  <script src="app.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

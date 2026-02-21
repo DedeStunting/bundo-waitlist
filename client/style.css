@@ -27,40 +27,22 @@ h1 { margin: 0; font-size: 22px; }
 h2 { margin: 0 0 10px; font-size: 22px; }
 .lead { color: #cdd7ff; line-height: 1.5; }
 
-.form { display: grid; gap: 12px; margin-top: 14px; }
-label { display: grid; gap: 6px; font-size: 13px; color: #cdd7ff; }
-input {
-  width: 100%;
-  padding: 12px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,.12);
-  background: #0b1222;
-  color: #eaf0ff;
-  outline: none;
-}
-input:focus { border-color: #6d5efc; }
-
-button {
-  padding: 12px 14px;
-  border: 0;
-  border-radius: 12px;
-  background: #6d5efc;
-  color: #fff;
-  font-weight: 700;
-  cursor: pointer;
-}
-button:hover { opacity: .92; }
-
-.fine { margin: 0; color: #a7b4ff; font-size: 12px; }
-
-.success {
+/* Tally Embed Styling */
+.waitlist-embed {
   margin-top: 14px;
-  padding: 14px;
-  border-radius: 14px;
   border: 1px solid rgba(255,255,255,.12);
-  background: rgba(109, 94, 252, .12);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0b1222;
 }
-.success h3 { margin: 0 0 6px; }
+
+.tally-frame {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+.fine { margin-top: 10px; color: #a7b4ff; font-size: 12px; }
 
 .footer {
   margin-top: 14px;
