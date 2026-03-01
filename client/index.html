@@ -5,163 +5,168 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bundo — Join the Waitlist</title>
   <meta name="description" content="Find and hire trusted artisans near you. Join the Bundo waitlist for early access." />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header class="topbar">
-    <div class="container nav-inner">
+    <div class="container topbar__inner">
       <div class="brand">
-        <img src="bundo-logo.jpg" alt="Bundo Logo" class="logo" />
-        <div class="brand-text">
-          <div class="brand-name">Bundo</div>
-          <div class="brand-tag">Hire trusted artisans near you.</div>
+        <img src="bundo-logo.jpg" alt="Bundo logo" class="logo" />
+        <div class="brand__text">
+          <div class="brand__name">Bundo</div>
+          <div class="brand__tag">Hire trusted artisans near you.</div>
         </div>
       </div>
 
-      <nav class="nav">
-        <a href="#how">How it works</a>
-        <a href="#for">For who?</a>
-        <a href="#join" class="nav-btn">Join Waitlist</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#how" class="nav__link">How it works</a>
+        <a href="#who" class="nav__link">Who it’s for</a>
+        <button class="nav__btn" type="button" data-tally-open="448G1O">Join waitlist</button>
       </nav>
     </div>
   </header>
 
   <main class="container">
-
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-left">
+      <div class="hero__left">
         <div class="pill">
-          <span class="dot"></span>
-          Launching Soon — Early Access
+          <span class="dot" aria-hidden="true"></span>
+          Launching soon — early access
         </div>
 
-        <h1>
-          Find Nearby <span class="highlight">Trusted Artisans</span><br>
-          And Book In Minutes.
+        <h1 class="hero__title">
+          Book trusted artisans near you.
         </h1>
 
-        <p class="lead">
-          Bundo connects customers with verified artisans close by.
-          Discover portfolios, compare pricing, and request bookings — all in one place.
+        <p class="hero__lead">
+          Bundo is a service marketplace for discovering and booking skilled artisans around you.
+          See portfolios, compare pricing, and request appointments in minutes.
         </p>
 
-        <div class="hero-actions">
-          <a href="#join" class="btn-primary">Join the Waitlist</a>
-          <a href="#how" class="btn-secondary">See how it works</a>
+        <div class="cta-row">
+          <button class="btn btn--primary" type="button" data-tally-open="448G1O">
+            Join the waitlist
+          </button>
+          <a class="btn btn--ghost" href="#how">See how it works</a>
         </div>
 
-        <div class="meta-boxes">
-          <div class="meta">
-            <small>Launching First</small>
-            <strong>Campuses → Major Cities</strong>
+        <div class="signals">
+          <div class="signal">
+            <div class="signal__k">Launching first</div>
+            <div class="signal__v">Campuses → then major cities</div>
           </div>
-          <div class="meta">
-            <small>What You Get</small>
-            <strong>Early access + updates</strong>
+          <div class="signal">
+            <div class="signal__k">You’ll get</div>
+            <div class="signal__v">Early access + launch updates</div>
           </div>
         </div>
 
         <p class="fine">No spam. Only launch updates.</p>
       </div>
 
-      <!-- WAITLIST FORM -->
-      <div class="hero-right" id="join">
-        <div class="card">
-          <h2>Join the Bundo Waitlist</h2>
-          <p class="card-sub">Be the first to try Bundo when we launch.</p>
+      <!-- RIGHT PANEL (YC-style: minimal proof, no huge form) -->
+      <aside class="hero__right" aria-label="Highlights">
+        <div class="panel">
+          <div class="panel__title">Why Bundo</div>
+          <ul class="list">
+            <li><span class="check">✓</span> Nearby discovery</li>
+            <li><span class="check">✓</span> Portfolios before booking</li>
+            <li><span class="check">✓</span> Verified profiles</li>
+            <li><span class="check">✓</span> Reviews you can trust</li>
+          </ul>
 
-          <div class="form-embed">
-            <iframe
-              src="https://tally.so/r/448G1O"
-              loading="lazy"
-              width="100%"
-              height="480"
-              frameborder="0"
-              marginheight="0"
-              marginwidth="0"
-              title="Bundo Waitlist">
-            </iframe>
+          <div class="panel__cta">
+            <button class="btn btn--primary btn--full" type="button" data-tally-open="448G1O">
+              Join waitlist
+            </button>
+            <p class="micro">Takes under 10 seconds.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- TRUST STRIP -->
-    <section class="trust-strip">
-      <div>📍 Nearby Discovery</div>
-      <div>🖼️ Real Portfolios</div>
-      <div>✅ Verified Profiles</div>
-      <div>⭐ Trusted Reviews</div>
+      </aside>
     </section>
 
     <!-- HOW IT WORKS -->
     <section class="section" id="how">
-      <h2>How It Works</h2>
-      <div class="grid-3">
-        <div class="feature">
-          <span>1</span>
-          <h3>Discover</h3>
-          <p>Search artisans by service and location.</p>
+      <div class="section__head">
+        <h2>How it works</h2>
+        <p>Simple steps for customers and artisans.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step__n">1</div>
+          <div class="step__t">Discover</div>
+          <div class="step__p">Search by service and location. View portfolios and pricing.</div>
         </div>
-        <div class="feature">
-          <span>2</span>
-          <h3>Request & Book</h3>
-          <p>Send booking requests with preferred time.</p>
+        <div class="step">
+          <div class="step__n">2</div>
+          <div class="step__t">Request</div>
+          <div class="step__p">Send a booking request with your preferred time and details.</div>
         </div>
-        <div class="feature">
-          <span>3</span>
-          <h3>Review</h3>
-          <p>Leave feedback after service completion.</p>
+        <div class="step">
+          <div class="step__n">3</div>
+          <div class="step__t">Book</div>
+          <div class="step__p">Get accepted, show up, and leave a review after completion.</div>
         </div>
       </div>
     </section>
 
-    <!-- FOR WHO -->
-    <section class="section" id="for">
-      <h2>Built for Customers & Artisans</h2>
+    <!-- WHO IT'S FOR -->
+    <section class="section" id="who">
+      <div class="section__head">
+        <h2>Who it’s for</h2>
+        <p>Built for both sides of the marketplace.</p>
+      </div>
 
-      <div class="grid-2">
-        <div class="panel">
-          <h3>For Customers</h3>
+      <div class="cols">
+        <div class="col">
+          <h3>Customers</h3>
           <ul>
-            <li>Find skilled artisans nearby</li>
-            <li>View portfolios & ratings</li>
-            <li>Easy booking process</li>
+            <li>Find reliable artisans nearby</li>
+            <li>Compare portfolios and ratings</li>
+            <li>Book quickly without back-and-forth</li>
           </ul>
         </div>
-
-        <div class="panel">
-          <h3>For Artisans</h3>
+        <div class="col">
+          <h3>Artisans</h3>
           <ul>
-            <li>Create a professional profile</li>
-            <li>Get discovered locally</li>
-            <li>Manage booking requests</li>
+            <li>Create a profile that builds trust</li>
+            <li>Get discovered by local customers</li>
+            <li>Manage booking requests easily</li>
           </ul>
         </div>
       </div>
-    </section>
 
-    <!-- FINAL CTA -->
-    <section class="cta">
-      <h2>Get Early Access to Bundo</h2>
-      <a href="#join" class="btn-primary">Join Waitlist</a>
+      <div class="final-cta">
+        <button class="btn btn--primary" type="button" data-tally-open="448G1O">
+          Join the waitlist
+        </button>
+        <p class="fine">We’ll email you when early access opens.</p>
+      </div>
     </section>
 
     <footer class="footer">
-      <div class="footer-left">
-        <img src="bundo-logo.jpg" alt="Bundo Logo" class="logo small" />
+      <div class="footer__left">
+        <img src="bundo-logo.jpg" alt="Bundo logo" class="logo logo--sm" />
         <span>© <span id="year"></span> Bundo</span>
       </div>
+      <div class="footer__right">
+        <a href="#how">How it works</a>
+        <a href="#who">Who it’s for</a>
+        <button class="linkbtn" type="button" data-tally-open="448G1O">Join</button>
+      </div>
     </footer>
-
   </main>
+
+  <!-- Tally popup embed -->
+  <script async src="https://tally.so/widgets/embed.js"></script>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 
+    // If embed.js is slow, these attributes still work once it loads.
+    // data-tally-open="FORM_ID" triggers popup automatically.
+  </script>
 </body>
 </html>
