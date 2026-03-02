@@ -35,9 +35,7 @@
           Launching soon — early access
         </div>
 
-        <h1 class="hero__title">
-          Book trusted artisans near you.
-        </h1>
+        <h1 class="hero__title">Book trusted artisans near you.</h1>
 
         <p class="hero__lead">
           Bundo is a service marketplace for discovering and booking skilled artisans around you.
@@ -65,7 +63,7 @@
         <p class="fine">No spam. Only launch updates.</p>
       </div>
 
-      <!-- RIGHT PANEL (YC-style: minimal proof, no huge form) -->
+      <!-- RIGHT PANEL -->
       <aside class="hero__right" aria-label="Highlights">
         <div class="panel">
           <div class="panel__title">Why Bundo</div>
@@ -128,6 +126,7 @@
             <li>Book quickly without back-and-forth</li>
           </ul>
         </div>
+
         <div class="col">
           <h3>Artisans</h3>
           <ul>
@@ -146,27 +145,39 @@
       </div>
     </section>
 
+    <!-- FOOTER (includes official email) -->
     <footer class="footer">
       <div class="footer__left">
         <img src="bundo-logo.jpg" alt="Bundo logo" class="logo logo--sm" />
-        <span>© <span id="year"></span> Bundo</span>
+        <div class="footer__brand">
+          <div class="footer__name">Bundo</div>
+          <div class="footer__muted">Hire trusted artisans near you.</div>
+          <div class="footer__copy">© <span id="year"></span> Bundo</div>
+        </div>
       </div>
+
       <div class="footer__right">
-        <a href="#how">How it works</a>
-        <a href="#who">Who it’s for</a>
-        <button class="linkbtn" type="button" data-tally-open="448G1O">Join</button>
+        <div class="footer__col">
+          <div class="footer__label">Contact</div>
+          <a class="footer__link" href="mailto:contact@bundo.ng">contact@bundo.ng</a>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__label">Company</div>
+          <a class="footer__link" href="#how">How it works</a>
+          <a class="footer__link" href="#who">Who it’s for</a>
+          <button class="footer__link linkbtn" type="button" data-tally-open="448G1O">Join waitlist</button>
+        </div>
       </div>
     </footer>
   </main>
 
-  <!-- Tally popup embed -->
+  <!-- Tally popup script -->
   <script async src="https://tally.so/widgets/embed.js"></script>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    // If embed.js is slow, these attributes still work once it loads.
-    // data-tally-open="FORM_ID" triggers popup automatically.
+    // data-tally-open="448G1O" automatically opens popup once the script is loaded.
   </script>
 </body>
 </html>
